@@ -1,9 +1,9 @@
 # About FitFormula
-<b>FitFormula</b> is a fitness application that I had developed during the course of my Computer Science degree. FitFormula provides health and wellbeing resources such as diet plans and workout routines to individuals who are keen on living a healthy lifestyle.
+<b>FitFormula</b> is a fitness application that I developed during the course of my Computer Science degree. FitFormula provides health and wellbeing resources such as diet plans and workout routines to individuals who are keen on living a healthy lifestyle.
 
 ## Preview
 Demo: <a href="https://youtu.be/rI5ua3uiA3o">https://youtu.be/rI5ua3uiA3o</a> <br> 
-Full preview: <a href="https://youtu.be/rI5ua3uiA3o">https://winter-berry.github.io/FitFormula-android/</a>
+Full preview: <a href="https://winter-berry.github.io/FitFormula-android/">https://winter-berry.github.io/FitFormula-android/</a>
 
 <p float="left">
   <img src="https://winter-berry.github.io/FitFormula-android/Images/1.png" width="19%" height="19%">
