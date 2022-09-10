@@ -1,0 +1,176 @@
+<resources>
+    <string name="app_name">FitFormula</string>
+
+    /*--------------------Navigation Drawer Menu--------------------*/
+    <string name="navigation_drawer_open">Open Menu</string>
+    <string name="navigation_drawer_close">Close Menu</string>
+    <string name="your_string_here">
+        This is an <u>underline</u>.
+    </string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="intermediate">Intermediate</string>
+    <string name="beginner">Beginner</string>
+    <string name="advanced">Advanced</string>
+    <string name="workout_difficulty">Workout Difficulty</string>
+    <string name="workout_intensity">Workout Intensity</string>
+    <string name="low">Low</string>
+    <string name="high">High</string>
+    <string name="medium">Medium</string>
+
+    <string-array name="workout_Length">
+        <item>10 Minutes</item>
+        <item>20 Minutes</item>
+        <item>30 Minutes</item>
+    </string-array>
+    <string name="todo">TODO</string>
+    <string name="Description_low_carbohydrate_diet">Low-carbohydrate diet description.
+    </string>
+    <string name="Description_vegan_diet">Vegan diet description.
+    </string>
+    <string name="Description_ultra_low_fat_diet">Ultra-low fat diet description.
+    </string>
+    <string name="Description_protein_based_diet">Protein based diet description.
+    </string>
+    <string name="supplements_description">Supplements description</string>
+    <string name="low_carbohydrate_diet">Low Carbohydrate Diet</string>
+    <string name="vegan_diet">Vegan Diet</string>
+    <string name="ultra_low_fat_diet">Ultra-Low Fat Diet</string>
+    <string name="protein_based_diets">Protein-Based Diets</string>
+    <string name="other_diet_options">Supplement Packages</string>
+    <string name="skip">SKIP</string>
+    <string name="gender">Gender</string>
+    <string name="week_1_day_1">Week 1 Day 1</string>
+    <string name="week_1_day_1_description">BreakFast: Low-carb blueberry smoothie\nLunch: Low-carb zucchini and walnut salad\nDinner: Low-carb moussaka</string>
+    <string name="week_1_day_2">Week 1 Day 2</string>
+    <string name="week_1_day_2_description">BreakFast: Low-carb oatmeal\nLunch: Keto Caprese omelet\nDinner: Broccoli and cauliflower gratin with...</string>
+    <string name="week_1_day_3">Week 1 Day 3</string>
+    <string name="week_1_day_3_description">BreakFast: Keto frittata with fresh spinach\nLunch: Low-carb rutabaga fritters with...\nDinner: Zoodles with creamy salmon sauce</string>
+    <string name="week_1_day_4">Week 1 Day 4</string>
+    <string name="week_1_day_4_description">BreakFast: Low-carb cream with berries\nLunch: Salads in a jar\nDinner: Creamy low-carb Tuscan shrimp</string>
+    <string name="week_1_day_5">Week 1 Day 5</string>
+    <string name="week_1_day_5_description">BreakFast: Mushroom omelet\nLunch: Low-carb fried kale and broccoli salad\nDinner: Low-carb eggplant pizza</string>
+    <string name="week_1_day_6">Week 1 Day 6</string>
+    <string name="week_1_day_6_description">BreakFast: Low-carb eggplant hash with eggs\nLunch: Keto quesadillas\nDinner: Creamy low-carb cauliflower...</string>
+    <string name="week_1_day_7">Week 1 Day 7</string>
+    <string name="week_1_day_7_description">BreakFast: Keto pancakes with berries and...\nLunch: Cheese crusted omelet\nDinner: Easy protein noodle low-carb lasagna</string>
+    <string name="week_1_day_1_description2">BreakFast: Vegan Pancake\nA.M. Snack: Edamame pods\nLunch: White Bean and Avocado Toast...</string>
+    <string name="week_1_day_2_description2">BreakFast: Peanut Butter and Chia Berry Jam English Muffin\nA.M. Snack: Edamame pods...</string>
+    <string name="week_1_day_3_description2">BreakFast: Peanut Butter-Banana Toast\nA.M. Snack: Pumpkin seeds\nLunch: Green Salad with Edamame and...</string>
+    <string name="week_1_day_4_description2">BreakFast: Quinoa and Chia Oatmeal Mix\nA.M. Snack: 1 small plum\nLunch: Roasted Cauliflower and Potato Curry...</string>
+    <string name="week_1_day_5_description2">BreakFast: Vegan Pancake\nA.M. Snack: - \nLunch: Veggie and Hummus Sandwich...</string>
+    <string name="week_1_day_6_description2">BreakFast: Peanut Butter and Chia Berry Jam English Muffin\nA.M. Snack: Hummus and celery sticks...</string>
+    <string name="week_1_day_7_description2">BreakFast: Vegan Pancake\nA.M. Snack: Medium Orange \nLunch: Green Salad with Edamame and Beets...</string>
+    <string name="view">View</string>
+    <string name="week_1_day_1_description3">BreakFast: Banana Yogurt Pots\nLunch: Cannellini Bean Salad\nDinner: Quick moussaka</string>
+    <string name="week_1_day_2_description3">BreakFast: Tomato and Watermelon Salad\nLunch: Edgy Veggie Wraps\nDinner: Spicy Tomato Baked Eggs</string>
+    <string name="week_1_day_3_description3">BreakFast: Blueberry Oats Bowl\nLunch: Carrot, Orange and Avocado Salad\nDinner: Salmon with Potatoes and Corn Salad</string>
+    <string name="week_1_day_4_description3">BreakFast: Banana Yogurt Pots\nLunch: Mixed Bean Salad\nDinner: Spiced Carrot and Lentil Soup</string>
+    <string name="week_1_day_5_description3">BreakFast: Tomato and Watermelon Salad\nLunch: Panzanella Salad\nDinner: Med Chicken, Quinoa and Greek Salad</string>
+    <string name="week_1_day_6_description3">BreakFast: Blueberry Oats Bowl\nLunch: Quinoa and Stir Fried Veg\nDinner: Grilled Vegetables with Bean Mash</string>
+    <string name="week_1_day_7_description3">BreakFast: Banana Yogurt Pots\nLunch: Moroccan Chickpea Soup\nDinner: Spicy Mediterranean Beet Salad</string>
+    <string name="week_1_day_1_description4">Breakfast: Easy Boiled Eggs on Toast\nLunch: Rainbow Quinoa Salad\nDinner: Lamb Chop with Sweet Potato Mash...</string>
+    <string name="week_1_day_2_description4">Breakfast: Muesli with Yoghurt and Fruit\nLunch: Chicken Salad Flat Bread\nDinner: Bourghal Wheat Salad with Poached...</string>
+    <string name="week_1_day_3_description4">Breakfast: Muffin and Fruit\nLunch: Tuna and Avocado Salad on Toast\nDinner: Beef and Black Bean Stir-fry with Rice..</string>
+    <string name="week_1_day_4_description4">Breakfast: Coconut Blueberry Baked Oats\nLunch: Chickpea and Barley Salad\nDinner: Spaghetti Bolognese...</string>
+    <string name="week_1_day_5_description4">Breakfast: Porridge with Fruit\nLunch: Chicken and Pasta Salad\nDinner: Baked Salmon with Quinoa and...</string>
+    <string name="week_1_day_6_description4">Breakfast: Banana and Chocolate Smoothie\nLunch: Spiced Sweet Potato and Chick Pea Fritters with Soft Boiled Eggs...</string>
+    <string name="week_1_day_7_description4">Breakfast: Fried Eggs with Spiced Avocado\nLunch: Beef and Noodle Lettuce Cups\nDinner: Grilled Chicken with Rice and Vegetabl..</string>
+    <string name="back_to_main">Back to Main</string>
+    <string name="core_workout">Core Workout</string>
+    <string name="core_workout_description">Core Workout Description</string>
+    <string name="leg_day_workout">Leg Day Workout</string>
+    <string name="leg_day_description">Leg Day Workout Description</string>
+    <string name="upper_body_workout">Upper Body Workout</string>
+    <string name="upper_body_workout_description">Upper Body Workout Description</string>
+    <string name="yoga_description">Yoga Description</string>
+    <string name="amputees_special_workout">Amputees Special Workout</string>
+    <string name="amputees_special_workout_description">Amputees Special Workout Description</string>
+    <string name="_14_day_beginner_pack">7-Day Beginner Pack</string>
+    <string name="_14_day_beginner_pack_description">In this 7 Day Beginner pack, you will be doing a series of workouts for 7 days. Click here for this exhilarating workout challenge!</string>
+    <string name="core_workouts_plan_2">Core Workouts Plan 2</string>
+    <string name="core_workouts_plan_2_description">Core Workouts Plan 2 description</string>
+    <string name="core_workouts_plan_3">Core Workouts Plan 3</string>
+    <string name="core_workouts_plan_3_description">Core Workouts Plan 3 description</string>
+    <string name="core_workouts_plan_4">Core Workouts Plan 4</string>
+    <string name="core_workouts_plan_4_description">Core Workouts Plan 4 description</string>
+    <string name="core_workouts_plan_5">Core Workouts Plan 5</string>
+    <string name="core_workouts_plan_5_description">Core Workouts Plan 5 description</string>
+    <string name="leg_day_plan_1">Leg Day Plan 1</string>
+    <string name="leg_day_plan_1_description">Leg Day Plan 1 description</string>
+    <string name="leg_day_plan_2">Leg Day Plan 2</string>
+    <string name="leg_day_plan_2_description">Leg Day Plan 2 description</string>
+    <string name="leg_day_plan_3">Leg Day Plan 3</string>
+    <string name="leg_day_plan_3_description">Leg Day Plan 3 description</string>
+    <string name="leg_day_plan_4">Leg Day Plan 4</string>
+    <string name="leg_day_plan_4_description">Leg Day Plan 4 description</string>
+    <string name="leg_day_plan_5">Leg Day Plan 5</string>
+    <string name="leg_day_plan_5_description">Leg Day Plan 5 description</string>
+    <string name="upper_body_workout_plan_1">Upper Body Workout plan 1</string>
+    <string name="upper_body_workout_plan_1_description">Upper Body Workout plan 1 description</string>
+    <string name="upper_body_workout_plan_2">Upper Body Workout plan 2</string>
+    <string name="upper_body_workout_plan_2_description">Upper Body Workout plan 2 description</string>
+    <string name="upper_body_workout_plan_3">Upper Body Workout plan 3</string>
+    <string name="upper_body_workout_plan_3_description">Upper Body Workout plan 3 description</string>
+    <string name="upper_body_workout_plan_4">Upper Body Workout plan 4</string>
+    <string name="upper_body_workout_plan_4_description">Upper Body Workout plan 4 description</string>
+    <string name="upper_body_workout_plan_5">Upper Body Workout plan 5</string>
+    <string name="upper_body_workout_plan_5_description">Upper Body Workout plan 5 description</string>
+    <string name="yoga_1">Yoga 1</string>
+    <string name="yoga_1_description">Yoga 1 description</string>
+    <string name="yoga_2">Yoga 2</string>
+    <string name="yoga_2_description">Yoga 2 description</string>
+    <string name="yoga_3">Yoga 3</string>
+    <string name="yoga_3_description">Yoga 3 description</string>
+    <string name="yoga_4">Yoga 4</string>
+    <string name="yoga_4_description">Yoga 4 description</string>
+    <string name="yoga_5">Yoga 5</string>
+    <string name="yoga_5_description">Yoga 5 description</string>
+    <string name="amputees_plan_1">Amputees Plan 1</string>
+    <string name="amputees_plan_1_description">Amputees Plan 1 description</string>
+    <string name="amputees_plan_2">Amputees Plan 2</string>
+    <string name="amputees_plan_2_description">Amputees Plan 2 description</string>
+    <string name="amputees_plan_3">Amputees Plan 3</string>
+    <string name="amputees_plan_3_description">Amputees Plan 3 description</string>
+    <string name="amputees_plan_4">Amputees Plan 4</string>
+    <string name="amputees_plan_4_description">Amputees Plan 4 description</string>
+    <string name="amputees_plan_5">Amputees Plan 5</string>
+    <string name="amputees_plan_5_description">Amputees Plan 5 description</string>
+    <string name="flow_of_core_workout_challenge_part_1">0:00 Introduction to Standing Ab and Core Workout</string>
+    <string name="left_side">LEFT SIDE</string>
+    <string name="flow_of_core_workout_challenge_part_2">0:30 Core Exercise 1 Stand Abdominal Knee Crunch</string>
+    <string name="flow_of_core_workout_challenge_part_3">2:00 Core Exercise 2 Standing Abdominal  Waist Trainer</string>
+    <string name="flow_of_core_workout_challenge_part_4">3:16 Core Exercise 3 Standing Abdominal Side Waist Bends</string>
+    <string name="flow_of_core_workout_challenge_part_5">4:23 Core Exercise 4 Standing Abdominal Leg Kick and Reach</string>
+    <string name="flow_of_core_workout_challenge_part_6">5:53 Core Exercise 5 Standing Abdominal Crunch</string>
+    <string name="flow_of_core_workout_challenge_part_7">then we repeat</string>
+    <string name="right_side">RIGHT SIDE</string>
+    <string name="flow_of_core_workout_challenge_part_8">7:20 Core Exercise 1 Stand Abdominal Knee Crunch</string>
+    <string name="flow_of_core_workout_challenge_part_9">8:33 Core Exercise 2 Standing Abdominal  Waist Trainer</string>
+    <string name="flow_of_core_workout_challenge_part_10">9:52 Core Exercise 3 Standing Abdominal Side Waist Bends</string>
+    <string name="flow_of_core_workout_challenge_part_11">11:20 Core Exercise 4 Standing Abdominal Leg Kick and Reach</string>
+    <string name="flow_of_core_workout_challenge_part_12">12:27 Core Exercise 5 Standing Abdominal Crunch</string>
+    <string name="flow_of_core_workout_challenge_part_13">13:37 Cool Down March</string>
+    <string name="flow_of_leg_day_workout_challenge_part_1">Side lunges (Right Hand Side)</string>
+    <string name="flow_of_leg_day_workout_challenge_part_2">Releve chairs</string>
+    <string name="flow_of_leg_day_workout_challenge_part_3">Side lunges (Left Hand Side)</string>
+    <string name="flow_of_leg_day_workout_challenge_part_4">Releve plie pulses</string>
+    <string name="flow_of_leg_day_workout_challenge_part_5">Squat lunges</string>
+    <string name="flow_of_leg_day_workout_challenge_part_6">Leg circles (Right Hand Side)</string>
+    <string name="flow_of_leg_day_workout_challenge_part_7">Leg circles (Left Hand Side)</string>
+    <string name="flow_of_upper_body_workout_challenge_procedure">Procedures: (30 seconds-on - 30 seconds-0n) x 2\n 30 seconds Rest\nThen Repeat four times</string>
+    <string name="flow_of_upper_body_workout_challenge_part_1">1A: Bear Tap\n1B: Crap Tap</string>
+    <string name="flow_of_upper_body_workout_challenge_part_2">2A: Pike Press\n2B: The boxer</string>
+    <string name="flow_of_upper_body_workout_challenge_part_3">3A: High/Low Planks\n3B: Cherry Pickers</string>
+    <string name="flow_of_upper_body_workout_challenge_part_4">4A: Shoulder Taps\n4B: Push Ups</string>
+    <string name="flow_of_yoga_workout_challenge_description"> Follow through the instructions given in the video to follow through every step of the yoga video to relieve yourself from stress and anxiety now!</string>
+    <string name="flow_of_amputees_special_workout_challenge_way_1">Standing against the counter or other surface</string>
+    <string name="flow_of_amputees_special_workout_challenge_part_1">1. Hip Abduction</string>
+    <string name="flow_of_amputees_special_workout_challenge_part_2">2. Hip Flexion</string>
+    <string name="flow_of_amputees_special_workout_challenge_part_3">3. Hip Extension</string>
+    <string name="flow_of_amputees_special_workout_challenge_part_4">4. Knee flexion and Knee extension</string>
+    <string name="flow_of_amputees_special_workout_challenge_part_5">5. Internal and external rotation</string>
+    <string name="flow_of_amputees_special_workout_challenge_way_2">Follow same workouts but against gravity</string>
+    <string name="flow_of_amputees_special_workout_challenge_way_3">Follow same workouts but with resistance bands</string>
+    <string name="flow_of_amputees_special_workout_challenge_way_4">Follow same workouts but with body weights as resistance</string>
+</resources>

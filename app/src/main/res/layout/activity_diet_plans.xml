@@ -1,0 +1,374 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/dl_Diet_Plans"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Diet_Plans.Diet_Plans"
+    android:fitsSystemWindows="true">
+
+    <!--tools:openDrawer="start"-->
+
+    <com.google.android.material.navigation.NavigationView
+        android:layout_width="230dp"
+        android:layout_height="match_parent"
+        android:id="@+id/nv_DietPlans"
+        app:headerLayout="@layout/menu_header"
+        app:menu="@menu/main_menu"
+        android:layout_gravity="start"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clickable="true"
+        android:background="@color/main_light"
+        android:outlineProvider="bounds">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/main_light"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <View
+                android:id="@+id/view_diet"
+                android:layout_width="match_parent"
+                android:layout_height="107dp"
+                android:background="@drawable/home_background"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <include
+                android:id="@+id/tb_DietPlans"
+                layout="@layout/toolbar_preset_homebutton" />
+
+            <SearchView
+                android:id="@+id/sv_DietPlans"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:background="@drawable/home_background_02"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tb_DietPlans"/>
+
+            <LinearLayout
+                android:id="@+id/LL_DietPlans_01"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="12dp"
+                android:background="@drawable/button_round_white"
+                android:clickable="true"
+                android:elevation="2dp"
+                android:foreground="?attr/selectableItemBackground"
+                android:orientation="horizontal"
+                android:padding="10dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/view_diet"
+                app:layout_constraintVertical_bias="0.0">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cv_DietPlans_01"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <ImageView
+                        android:id="@+id/imageView3"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_margin="10dp"
+                        android:layout_weight="1"
+                        android:contentDescription="TODO"
+                        app:srcCompat="@drawable/ic_09_calculator"
+                        tools:ignore="ContentDescription,HardcodedText" />
+
+                    <TextView
+                        android:id="@+id/textView3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="90dp"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/montserrat"
+                        android:text="@string/low_carbohydrate_diet"
+                        android:textColor="@color/dark_blue"
+                        android:textSize="14sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintLeft_toRightOf="@+id/imageView3"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/textView4"
+                        android:layout_width="270dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="90dp"
+                        android:layout_marginTop="32dp"
+                        android:fontFamily="@font/montserrat"
+                        android:paddingEnd="12dp"
+                        android:text="@string/Description_low_carbohydrate_diet"
+                        android:textSize="12sp"
+                        android:textColor="@color/description_grey"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintLeft_toRightOf="@+id/imageView3"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/LL_DietPlans_02"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:background="@drawable/button_round_white"
+                android:clickable="true"
+                android:elevation="2dp"
+                android:foreground="?attr/selectableItemBackground"
+                android:orientation="horizontal"
+                android:padding="10dp"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="12dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/LL_DietPlans_01"
+                app:layout_constraintVertical_bias="0.0"
+                tools:ignore="MissingConstraints,SpeakableTextPresentCheck">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cv_DietPlans_02"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <ImageView
+                        android:id="@+id/imageView4"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_margin="10dp"
+                        android:layout_weight="1"
+                        android:contentDescription="TODO"
+                        app:srcCompat="@drawable/ic_diet_03"
+                        tools:ignore="ContentDescription,HardcodedText" />
+
+                    <TextView
+                        android:id="@+id/textView5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="90dp"
+                        android:layout_marginTop="10dp"
+                        android:text="@string/vegan_diet"
+                        android:textColor="@color/dark_blue"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/textView6"
+                        android:layout_width="270dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="90dp"
+                        android:layout_marginTop="32dp"
+                        android:fontFamily="@font/montserrat"
+                        android:textColor="@color/description_grey"
+                        android:text="@string/Description_vegan_diet"
+                        android:textSize="12sp" />
+
+
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/LL_DietPlans_03"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:background="@drawable/button_round_white"
+                android:clickable="true"
+                android:elevation="2dp"
+                android:foreground="?attr/selectableItemBackground"
+                android:orientation="horizontal"
+                android:padding="10dp"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="12dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/LL_DietPlans_02"
+                app:layout_constraintVertical_bias="0.0"
+                tools:ignore="MissingConstraints,SpeakableTextPresentCheck">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cv_DietPlans_03"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <ImageView
+                        android:id="@+id/imageView5"
+                        android:contentDescription="TODO"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_margin="10dp"
+                        android:layout_weight="1"
+                        app:srcCompat="@drawable/ic_diet_04"
+                        tools:ignore="ContentDescription,HardcodedText" />
+
+                    <TextView
+                        android:id="@+id/textView7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="90dp"
+                        android:layout_marginTop="10dp"
+                        android:text="@string/ultra_low_fat_diet"
+                        android:textColor="@color/dark_blue"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/textView8"
+                        android:layout_width="270dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="90dp"
+                        android:layout_marginTop="32dp"
+                        android:textColor="@color/description_grey"
+                        android:text="@string/Description_ultra_low_fat_diet"
+                        android:textSize="12sp" />
+
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/LL_DietPlans_04"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:background="@drawable/button_round_white"
+                android:clickable="true"
+                android:elevation="2dp"
+                android:foreground="?attr/selectableItemBackground"
+                android:orientation="horizontal"
+                android:padding="10dp"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="12dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/LL_DietPlans_03"
+                tools:ignore="MissingConstraints">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cv_DietPlans_04"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <ImageView
+                        android:id="@+id/imageView6"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_margin="10dp"
+                        android:layout_weight="1"
+                        android:contentDescription="TODO"
+                        app:srcCompat="@drawable/ic_15_protein_shake"
+                        tools:ignore="ContentDescription,HardcodedText" />
+
+                    <TextView
+                        android:id="@+id/textView9"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="90dp"
+                        android:layout_marginTop="10dp"
+                        android:text="@string/protein_based_diets"
+                        android:textColor="@color/dark_blue"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/textView10"
+                        android:layout_width="270dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="90dp"
+                        android:layout_marginTop="32dp"
+                        android:textColor="@color/description_grey"
+                        android:text="@string/Description_protein_based_diet"
+                        android:textSize="12sp" />
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/LL_DietPlans_05"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="12dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/button_round_white"
+                android:baselineAligned="false"
+                android:clickable="true"
+                android:elevation="2dp"
+                android:foreground="?attr/selectableItemBackground"
+                android:orientation="horizontal"
+                android:padding="10dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/LL_DietPlans_04"
+                app:layout_constraintVertical_bias="0.0"
+                tools:ignore="MissingConstraints,DuplicateClickableBoundsCheck">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cv_DietPlans_05"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <ImageView
+                        android:id="@+id/imageView7"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_margin="10dp"
+                        android:layout_weight="1"
+                        android:contentDescription="TODO"
+                        app:srcCompat="@drawable/ic_15_protein_shake"
+                        tools:ignore="ContentDescription,HardcodedText" />
+
+                    <TextView
+                        android:id="@+id/textView11"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="90dp"
+                        android:layout_marginTop="10dp"
+                        android:text="@string/other_diet_options"
+                        android:textColor="@color/dark_blue"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/textView12"
+                        android:layout_width="270dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="90dp"
+                        android:layout_marginTop="32dp"
+                        android:textColor="@color/description_grey"
+                        android:text="@string/supplements_description"
+                        android:textSize="12sp" />
+
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+
+</androidx.drawerlayout.widget.DrawerLayout>

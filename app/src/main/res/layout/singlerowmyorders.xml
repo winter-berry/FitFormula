@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraintLayoutSingleRow1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/background_border_rewards_store"
+    android:elevation="5dp"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:visibility="visible"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="1.0"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@id/constraintLayout1"
+    app:layout_constraintVertical_bias="1.0">
+
+    <RelativeLayout
+        android:layout_marginBottom="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/constraintLayoutSingleRowRelativeLayout1"
+        tools:ignore="MissingConstraints">
+
+        <ImageView
+            android:id="@+id/orderIcon1"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:src="@drawable/ic_01_calender"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/orderTitle1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@+id/orderIcon1"
+            android:text="Premium Workout \nPlan (7 Days Trial)"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="MissingConstraints" />
+
+        <RelativeLayout
+            android:id="@+id/constraintLayoutSingleRowRelativeLayout2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_toRightOf="@+id/orderTitle1"
+            tools:ignore="MissingConstraints"
+            android:layout_centerVertical="true">
+
+            <TextView
+                android:id="@+id/constraintLayoutSingleRowTextView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:text="Price:"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/orderQuantity1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/constraintLayoutSingleRowTextView1"
+                android:layout_alignParentRight="true"
+                android:text="1"
+                android:gravity="center"
+                android:background="@drawable/item_count_square"
+                android:textColor="@color/black" />
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

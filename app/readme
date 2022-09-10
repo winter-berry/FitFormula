@@ -1,0 +1,14 @@
+Take note of naming conventions for buttons, imageViews, textViews, etc.
+
+- Type of asset
+- Page name (Caps)
+- Description (Caps)
+
+So an imageView for a profile on the Home page should be named as follows: "iv_Home_Profile"
+
+---------------------------------------------------------------------------------------------
+
+All GUI layouts go in the "layout" folder.
+All other assets go in the "drawables" folder.
+All animations go in the "anim" folder.
+Define commonly used colors in "colors.xml". Same for "strings.xml".

@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/dl_notifications"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".Settings.Settings_Notifications">
+
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/nv_notifications"
+        android:layout_width="230dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        app:headerLayout="@layout/menu_header"
+        app:menu="@menu/main_menu" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:clickable="true"
+        android:outlineProvider="bounds">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayout_notifications"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/main_light"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <View
+                android:id="@+id/view_notifications"
+                android:layout_width="match_parent"
+                android:layout_height="107dp"
+                android:background="@drawable/home_background_05"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <include
+                android:id="@+id/tb_notifications"
+                layout="@layout/toolbar_preset_backbutton" />
+
+            <SearchView
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:background="@drawable/home_background_02"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tb_notifications" />
+
+            <LinearLayout
+                android:id="@+id/linearLayout8"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:background="@drawable/background_border"
+                android:clickable="true"
+                app:layout_constraintTop_toBottomOf="@+id/view_notifications">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/montserrat"
+                    android:gravity="center|left"
+                    android:paddingLeft="25dp"
+                    android:text="Push Notifications"
+                    android:textColor="@color/dark_blue"
+                    android:textSize="14dp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center|right"
+                    android:layout_marginRight="20dp"
+                    android:src="@drawable/ic_baseline_arrow_right_24" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayout9"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:background="@drawable/background_border"
+                android:clickable="true"
+                app:layout_constraintTop_toBottomOf="@+id/linearLayout8">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/montserrat"
+                    android:gravity="center|left"
+                    android:paddingLeft="25dp"
+                    android:text="Notification Sounds"
+                    android:textColor="@color/dark_blue"
+                    android:textSize="14dp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center|right"
+                    android:layout_marginRight="20dp"
+                    android:src="@drawable/ic_baseline_arrow_right_24" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayout10"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:background="@drawable/background_border"
+                android:clickable="true"
+                app:layout_constraintTop_toBottomOf="@+id/linearLayout9">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/montserrat"
+                    android:gravity="center|left"
+                    android:paddingLeft="25dp"
+                    android:text="Email Notifications"
+                    android:textColor="@color/dark_blue"
+                    android:textSize="14dp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center|right"
+                    android:layout_marginRight="20dp"
+                    android:src="@drawable/ic_baseline_arrow_right_24" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:background="@drawable/background_border"
+                android:clickable="true"
+                app:layout_constraintTop_toBottomOf="@+id/linearLayout10">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/montserrat"
+                    android:gravity="center|left"
+                    android:paddingLeft="25dp"
+                    android:text="Daily Workout Reminder"
+                    android:textColor="@color/dark_blue"
+                    android:textSize="14dp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center|right"
+                    android:layout_marginRight="20dp"
+                    android:src="@drawable/ic_baseline_arrow_right_24" />
+
+            </LinearLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+</androidx.drawerlayout.widget.DrawerLayout>

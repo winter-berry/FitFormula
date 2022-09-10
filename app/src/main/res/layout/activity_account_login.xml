@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Onboarding.AccountLogin">
+
+    <ImageView
+        android:id="@+id/iv_Login_Logo"
+        android:layout_width="260dp"
+        android:layout_height="100dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.050000012"
+        app:srcCompat="@drawable/ic_logo_notext" />
+
+    <EditText
+        android:id="@+id/tb_Login_Email"
+        android:layout_width="310dp"
+        android:layout_height="50dp"
+        android:ems="10"
+        android:fontFamily="@font/montserrat"
+        android:hint="Email"
+        android:inputType="textPersonName"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iv_Login_Logo"
+        app:layout_constraintVertical_bias="0.050000012" />
+
+    <EditText
+        android:id="@+id/tb_Login_Password"
+        android:layout_width="310dp"
+        android:layout_height="50dp"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:textSize="18sp"
+        android:fontFamily="@font/montserrat"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tb_Login_Email"
+        app:layout_constraintVertical_bias="0.050000012" />
+
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="310dp"
+        android:layout_height="50dp"
+        android:background="@drawable/button_rounded_corners"
+        android:backgroundTint="#CDDC39"
+        android:fontFamily="@font/montserrat"
+        android:text="Sign In"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tb_Login_Password"
+        app:layout_constraintVertical_bias="0.100000024" />
+
+    <Button
+        android:id="@+id/btn_Login_Google"
+        android:layout_width="310dp"
+        android:layout_height="65dp"
+        android:backgroundTint="#4285F4"
+        android:drawableLeft="@drawable/ic_google_02"
+        android:fontFamily="@font/montserrat"
+        android:text="Connect with Google"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnNoAccount" />
+
+    <Button
+        android:id="@+id/btn_Login_Facebook"
+        android:layout_width="310dp"
+        android:layout_height="65dp"
+        android:backgroundTint="#4267B2"
+        android:fontFamily="@font/montserrat"
+        android:text="Connect with Facebook"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:drawableLeft="@drawable/ic_facebook"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_Login_Google"
+        app:layout_constraintVertical_bias="0.22000003" />
+
+    <Button
+        android:id="@+id/btnNoAccount"
+        android:layout_width="310dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:backgroundTint="#FFFFFF"
+        android:fontFamily="@font/montserrat"
+        android:text="Don't have an account?"
+        android:textAllCaps="false"
+        android:textColor="@color/dark_grey"
+        android:textSize="14sp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnLogin"
+        app:layout_constraintVertical_bias="0.050000012" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

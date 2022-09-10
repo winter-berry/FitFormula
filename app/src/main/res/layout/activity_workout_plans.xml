@@ -1,0 +1,389 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/dl_WorkoutPlans"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".Workout_Plans.WorkoutPlans">
+
+    <!--tools:openDrawer="start"-->
+
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/nv_WorkoutPlans"
+        android:layout_width="230dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        app:headerLayout="@layout/menu_header"
+        app:menu="@menu/main_menu" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clickable="true"
+        android:background="@color/main_light"
+        android:outlineProvider="bounds">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/main_light"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <View
+                android:id="@+id/view_workout"
+                android:layout_width="match_parent"
+                android:layout_height="107dp"
+                android:background="@drawable/home_background"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <include
+                android:id="@+id/tb_WorkoutPlans"
+                layout="@layout/toolbar_preset_homebutton" />
+
+            <SearchView
+                android:id="@+id/sv_WorkoutPlans"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:background="@drawable/home_background_02"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tb_WorkoutPlans" />
+
+            <LinearLayout
+                android:id="@+id/LL_WorkoutPlans_01"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="12dp"
+                android:background="@drawable/button_round_white"
+                android:clickable="true"
+                android:elevation="2dp"
+                android:foreground="?attr/selectableItemBackground"
+                android:onClick="LL_WorkoutPlans_01"
+                android:orientation="horizontal"
+                android:padding="10dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/view_workout"
+                app:layout_constraintVertical_bias="0.0">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cv_WorkoutPlans_01"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <ImageView
+                        android:id="@+id/iv_WorkoutPlans_Core"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_margin="10dp"
+                        android:layout_weight="1"
+                        app:srcCompat="@drawable/ic_workout_02" />
+
+                    <TextView
+                        android:id="@+id/tv_WorkoutPlans_Core"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="90dp"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/montserrat"
+                        android:text="@string/core_workout"
+                        android:textColor="@color/dark_blue"
+                        android:textSize="14sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintLeft_toRightOf="@+id/Recipe"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/tv_WorkoutPlans_Core_Description"
+                        android:layout_width="270dp"
+                        android:layout_height="50dp"
+                        android:layout_marginStart="90dp"
+                        android:layout_marginTop="32dp"
+                        android:fontFamily="@font/montserrat"
+                        android:text="@string/core_workout_description"
+                        android:textSize="12sp"
+                        android:textColor="@color/description_grey"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintLeft_toRightOf="@id/iv_WorkoutPlans_Core"
+                        app:layout_constraintTop_toTopOf="parent" />
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/LL_WorkoutPlans_02"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="12dp"
+                android:background="@drawable/button_round_white"
+                android:clickable="true"
+                android:elevation="2dp"
+                android:foreground="?attr/selectableItemBackground"
+                android:onClick="LL_WorkoutPlans_01"
+                android:orientation="horizontal"
+                android:padding="10dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/LL_WorkoutPlans_01"
+                app:layout_constraintVertical_bias="0.0">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cv_WorkoutPlans_02"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <ImageView
+                        android:id="@+id/iv_WorkoutPlans_Leg_Day"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_margin="10dp"
+                        android:layout_weight="1"
+                        app:srcCompat="@drawable/ic__58_leg" />
+
+                    <TextView
+                        android:id="@+id/tv_WorkoutPlans_Leg_Day"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="90dp"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/montserrat"
+                        android:text="@string/leg_day_workout"
+                        android:textColor="@color/dark_blue"
+                        android:textSize="14sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintLeft_toRightOf="@+id/Recipe"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/tv_WorkoutPlans_Leg_Day_Description"
+                        android:layout_width="270dp"
+                        android:layout_height="50dp"
+                        android:layout_marginStart="90dp"
+                        android:layout_marginTop="32dp"
+                        android:fontFamily="@font/montserrat"
+                        android:text="@string/leg_day_description"
+                        android:textSize="12sp"
+                        android:textColor="@color/description_grey"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintLeft_toRightOf="@id/iv_WorkoutPlans_Core"
+                        app:layout_constraintTop_toTopOf="parent" />
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/LL_WorkoutPlans_03"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="12dp"
+                android:background="@drawable/button_round_white"
+                android:clickable="true"
+                android:elevation="2dp"
+                android:foreground="?attr/selectableItemBackground"
+                android:onClick="LL_WorkoutPlans_01"
+                android:orientation="horizontal"
+                android:padding="10dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/LL_WorkoutPlans_02"
+                app:layout_constraintVertical_bias="0.0">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cv_WorkoutPlans_03"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <ImageView
+                        android:id="@+id/iv_WorkoutPlans_Upper_Body_Workout"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_margin="10dp"
+                        android:layout_weight="1"
+                        app:srcCompat="@drawable/ic__04_back" />
+
+                    <TextView
+                        android:id="@+id/tv_WorkoutPlans_Upper_Body"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="90dp"
+                        android:layout_marginTop="10dp"
+                        android:text="@string/upper_body_workout"
+                        android:textColor="@color/dark_blue"
+                        android:textSize="14sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintLeft_toRightOf="@+id/Recipe"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/tv_WorkoutPlans_Upper_Body_Description"
+                        android:layout_width="270dp"
+                        android:layout_height="50dp"
+                        android:layout_marginStart="90dp"
+                        android:layout_marginTop="32dp"
+                        android:textColor="@color/description_grey"
+                        android:fontFamily="@font/montserrat"
+                        android:text="@string/upper_body_workout_description"
+                        android:textSize="12sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintLeft_toRightOf="@id/iv_WorkoutPlans_Core"
+                        app:layout_constraintTop_toTopOf="parent" />
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/LL_WorkoutPlans_04"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="12dp"
+                android:background="@drawable/button_round_white"
+                android:clickable="true"
+                android:elevation="2dp"
+                android:foreground="?attr/selectableItemBackground"
+                android:onClick="LL_WorkoutPlans_01"
+                android:orientation="horizontal"
+                android:padding="10dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/LL_WorkoutPlans_03"
+                app:layout_constraintVertical_bias="0.0">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cv_WorkoutPlans_04"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <ImageView
+                        android:id="@+id/iv_WorkoutPlans_Yoga"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_margin="10dp"
+                        android:layout_weight="1"
+                        app:srcCompat="@drawable/ic_yogaball" />
+
+                    <TextView
+                        android:id="@+id/tv_WorkoutPlans_Yoga"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="90dp"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/montserrat"
+                        android:text="Yoga"
+                        android:textColor="@color/dark_blue"
+                        android:textSize="14sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintLeft_toRightOf="@+id/Recipe"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/tv_WorkoutPlans_Yoga_Description"
+                        android:layout_width="270dp"
+                        android:layout_height="50dp"
+                        android:layout_marginStart="90dp"
+                        android:layout_marginTop="32dp"
+                        android:textColor="@color/description_grey"
+                        android:fontFamily="@font/montserrat"
+                        android:text="@string/yoga_description"
+                        android:textSize="12sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintLeft_toRightOf="@id/iv_WorkoutPlans_Core"
+                        app:layout_constraintTop_toTopOf="parent" />
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/LL_WorkoutPlans_05"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="12dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/button_round_white"
+                android:clickable="true"
+                android:elevation="2dp"
+                android:foreground="?attr/selectableItemBackground"
+                android:onClick="LL_WorkoutPlans_01"
+                android:orientation="horizontal"
+                android:padding="10dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/LL_WorkoutPlans_04"
+                app:layout_constraintVertical_bias="0.0">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cv_WorkoutPlans_05"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <ImageView
+                        android:id="@+id/iv_WorkoutPlans_Amputees_Special_Workouts"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_margin="10dp"
+                        android:layout_weight="1"
+                        app:srcCompat="@drawable/ic__67_weights" />
+
+                    <TextView
+                        android:id="@+id/tv_WorkoutPlans_Amputees_Special"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="90dp"
+                        android:layout_marginTop="10dp"
+                        android:text="@string/amputees_special_workout"
+                        android:textColor="@color/dark_blue"
+                        android:textSize="14sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintLeft_toRightOf="@+id/Recipe"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/tv_WorkoutPlans_Amputees_Special_Description"
+                        android:layout_width="270dp"
+                        android:layout_height="50dp"
+                        android:textColor="@color/description_grey"
+                        android:layout_marginStart="90dp"
+                        android:layout_marginTop="32dp"
+                        android:fontFamily="@font/montserrat"
+                        android:text="@string/amputees_special_workout_description"
+                        android:textSize="12sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintLeft_toRightOf="@id/iv_WorkoutPlans_Core"
+                        app:layout_constraintTop_toTopOf="parent" />
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+</androidx.drawerlayout.widget.DrawerLayout>

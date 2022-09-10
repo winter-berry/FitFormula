@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.fitformula">
+
+    <application
+        android:name=".Settings.UserSettings"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Light"
+        tools:ignore="ExtraText">
+        /*--------------------Settings--------------------*/
+        <activity
+            android:name=".Settings.Settings_ContactUs"
+            android:windowSoftInputMode="stateHidden"
+            android:parentActivityName=".Settings.Settings"/>
+        <activity
+            android:name=".Settings.Settings_HS"
+            android:parentActivityName=".Settings.Settings"/>
+        <activity
+            android:name=".Settings.Settings_DP"
+            android:parentActivityName=".Settings.Settings"/>
+        <activity
+            android:name=".Settings.Settings_Notifications"
+            android:parentActivityName=".Settings.Settings"/>
+        <activity
+            android:name=".Settings.Settings_Display"
+            android:parentActivityName=".Settings.Settings"/>
+        <activity
+            android:name=".Settings.Settings_EditProfile"
+            android:windowSoftInputMode="stateHidden"
+            android:parentActivityName=".Settings.Settings"/>
+        <activity
+            android:name=".Settings.Settings"
+            android:parentActivityName=".Home"/>
+
+        /*--------------------For You--------------------*/
+        <activity
+            android:name=".CustomUser.For_you"
+            android:parentActivityName=".Home"
+            android:exported="true" />
+
+        /*--------------------Rewards Store--------------------*/
+
+        /*--------------------Diet Plans--------------------*/
+        <activity
+            android:name=".Diet_Plans.Diet_Sub_Page_4"
+            android:parentActivityName=".Diet_Plans.Diet_Plans"
+            android:exported="true" />
+        <activity
+            android:name=".Diet_Plans.Diet_Sub_Page_3"
+            android:parentActivityName=".Diet_Plans.Diet_Plans"
+            android:exported="true" />
+        <activity
+            android:name=".Diet_Plans.Diet_Sub_Page_2"
+            android:parentActivityName=".Diet_Plans.Diet_Plans"
+            android:exported="true" />
+        <activity
+            android:name=".Diet_Plans.Diet_Sub_Page_1"
+            android:parentActivityName=".Diet_Plans.Diet_Plans"
+            android:exported="true" />
+        <activity
+            android:name=".Diet_Plans.Diet_Plans"
+            android:parentActivityName=".Home"
+            android:exported="true" />
+
+        /*--------------------Workout Plans--------------------*/
+        <activity
+            android:name=".Workout_Plans.WorkoutPlans_Intensity_Page"
+            android:exported="true" />
+        <activity
+            android:name=".Workout_Plans.WorkoutPlans_Difficulty_Page"
+            android:exported="true" />
+        <activity
+            android:name=".Workout_Plans.WorkoutPlans_Amputees_Special_Workouts_1"
+            android:parentActivityName=".Workout_Plans.WorkoutPlans_Subpage_5" />
+        <activity
+            android:name=".Workout_Plans.WorkoutPlans_Subpage_5"
+            android:parentActivityName=".Workout_Plans.WorkoutPlans" />
+        <activity
+            android:name=".Workout_Plans.WorkoutPlans_Yoga_Workout_1"
+            android:parentActivityName=".Workout_Plans.WorkoutPlans_Subpage_4" />
+        <activity
+            android:name=".Workout_Plans.WorkoutPlans_Subpage_4"
+            android:parentActivityName=".Workout_Plans.WorkoutPlans" />
+        <activity
+            android:name=".Workout_Plans.WorkoutPlans_Upper_Body_Workout_1"
+            android:parentActivityName=".Workout_Plans.WorkoutPlans_Subpage_3" />
+        <activity
+            android:name=".Workout_Plans.WorkoutPlans_Subpage_3"
+            android:parentActivityName=".Workout_Plans.WorkoutPlans" />
+        <activity
+            android:name=".Workout_Plans.WorkoutPlans_Leg_Day_Workout_1"
+            android:parentActivityName=".Workout_Plans.WorkoutPlans_Subpage_2" />
+        <activity
+            android:name=".Workout_Plans.WorkoutPlans_Subpage_2"
+            android:parentActivityName=".Workout_Plans.WorkoutPlans" />
+        <activity
+            android:name=".Workout_Plans.WorkoutPlans_Core_Workout_1"
+            android:parentActivityName=".Workout_Plans.WorkoutPlans_Subpage" />
+        <activity
+            android:name=".Workout_Plans.WorkoutPlans_Subpage"
+            android:parentActivityName=".Workout_Plans.WorkoutPlans" />
+        <activity
+            android:name=".Workout_Plans.WorkoutPlans"
+            android:parentActivityName=".Home"/>
+
+        /*--------------------Home--------------------*/
+        <activity
+            android:name=".Home" /> <!-- android:exported="true" -->
+
+        /*--------------------Onboarding--------------------*/
+        <activity
+            android:name=".Onboarding.CreateProfile" />
+        <activity
+            android:name=".Onboarding.AccountLogin" />
+        <activity
+            android:name=".Onboarding.AccountRegister" />
+        <activity
+            android:name=".Onboarding.GetStarted"
+            android:label="GetStarted" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>

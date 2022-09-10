@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:id="@+id/menu_top"
+            android:checkableBehavior="single">
+        <item
+            android:id="@+id/nv_Menu_Home"
+            android:title="Home"
+            android:icon="@drawable/ic_home"/>
+        <item
+            android:id="@+id/nv_Menu_ForYou"
+            android:title="For You"
+            android:icon="@drawable/ic_profile"/>
+        <item
+            android:id="@+id/nv_Menu_Workout"
+            android:title="Workout Plans"
+            android:icon="@drawable/ic_workout"/>
+        <item
+            android:id="@+id/nv_Menu_Diet"
+            android:title="Diet Plans"
+            android:icon="@drawable/ic_diet_05"/>
+
+        <item
+            android:id="@+id/nv_Menu_Earn"
+            android:title="Earn Rewards"
+            android:icon="@drawable/ic_money"/>
+
+        <item
+            android:id="@+id/nv_Menu_Rewards"
+            android:title="Rewards Store"
+            android:icon="@drawable/ic_rewards"/>
+        <item
+            android:id="@+id/nv_Menu_Orders"
+            android:title="My Orders"
+            android:icon="@drawable/ic_baseline_shopping_bag_24"/>
+    </group>
+
+    <group android:id="@+id/menu_bottom"
+            android:checkableBehavior="single">
+        <item
+            android:id="@+id/nv_Menu_Settings"
+            android:title="Settings"
+            android:icon="@drawable/ic_settings"/>
+        <item
+            android:id="@+id/nv_Menu_Logout"
+            android:title="Logout"
+            android:icon="@drawable/ic_logout"/>
+    </group>
+</menu>
