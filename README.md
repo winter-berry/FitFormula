@@ -1,5 +1,5 @@
 # About FitFormula
-<b>FitFormula</b> is a fitness application that I created for my university project. FitFormula provides health and wellbeing resources such as diet plans and workout routines to individuals who are keen on living a healthy lifestyle.
+<b>FitFormula</b> is a fitness application that I developed during the course of my Computer Science degree. FitFormula provides health and wellbeing resources such as diet plans and workout routines to individuals who are keen on living a healthy lifestyle.
 
 ## Preview
 Demo: https://youtu.be/rI5ua3uiA3o <br> 
