@@ -25,3 +25,6 @@ Full preview: <a href="https://winter-berry.github.io/FitFormula-android/">https
 Note that the rewards page is not available for this reason.
 <li>Refactor rewards store</li>
 <li>UI improvements</li>
+
+## Notes
+This is a non-commercial project.
