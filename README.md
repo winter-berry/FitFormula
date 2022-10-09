@@ -1,5 +1,5 @@
 # FitFormula
-One of my Computer Science degree projects.
+This is one of my Computer Science degree projects.
 
 ## Preview
 Demo: <a href="https://youtu.be/rI5ua3uiA3o">https://youtu.be/rI5ua3uiA3o</a> <br> 
