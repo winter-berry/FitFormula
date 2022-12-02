@@ -1,5 +1,5 @@
 # FitFormula
-This is one of my Computer Science degree projects.
+BSc CS PROJECT
 
 ## Preview
 Demo: <a href="https://youtu.be/rI5ua3uiA3o">https://youtu.be/rI5ua3uiA3o</a> <br> 
