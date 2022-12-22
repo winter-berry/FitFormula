@@ -11,6 +11,8 @@ Full preview: <a href="https://winter-berry.github.io/FitFormula-android/">https
   <img src="https://winter-berry.github.io/FitFormula-android/Images/7.png" width="30%" height="30%">
 </p>
 
+UI designed and implemented by me.
+
 ## Future Implementations
 Note that the rewards page is not available for this reason.
 <li>Refactor rewards store</li>
