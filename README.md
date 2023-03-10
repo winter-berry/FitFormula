@@ -1,4 +1,4 @@
-# FitFormula
+# FitFormula (Android)
 This is BSc CS project.
 
 ## Preview
