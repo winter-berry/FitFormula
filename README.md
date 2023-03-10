@@ -1,5 +1,5 @@
 # FitFormula
-BSc CS PROJECT
+This is BSc CS PROJECT.
 
 ## Preview
 Demo: <a href="https://youtu.be/rI5ua3uiA3o">https://youtu.be/rI5ua3uiA3o</a> <br> 
@@ -10,8 +10,6 @@ Full preview: <a href="https://winter-berry.github.io/FitFormula-android/">https
     <img src="https://winter-berry.github.io/FitFormula-android/Images/9.png" width="30%" height="30%">
   <img src="https://winter-berry.github.io/FitFormula-android/Images/7.png" width="30%" height="30%">
 </p>
-
-UI designed and implemented by me.
 
 ## Future Implementations
 Note that the rewards page is not available for this reason.
