@@ -1,5 +1,4 @@
 # FitFormula (Android)
-This is BSc CS project.
 
 ## Preview
 Demo: <a href="https://youtu.be/rI5ua3uiA3o">https://youtu.be/rI5ua3uiA3o</a> <br> 
